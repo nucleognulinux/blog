@@ -60,7 +60,7 @@ deploy-dev:
     only:
         - dev
     dependencies:
-        - build
+        - build-dev
     before_script:
         - mkdir -p ~/.ssh 
         - cat "$SSH_ID_RSA" > ~/.ssh/id_rsa
