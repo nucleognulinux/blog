@@ -1,8 +1,8 @@
 image: registry.gitlab.com/starsaminf/blog-nucleo
 stages:
     - build
-    - build-dev
     - deploy
+    - build-dev
     - deploy-dev
 
 build:
