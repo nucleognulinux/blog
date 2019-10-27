@@ -1,0 +1,72 @@
+image: registry.gitlab.com/starsaminf/blog-nucleo
+stages:
+    - build
+    - build-dev
+    - deploy
+    - deploy-dev
+
+build:
+    stage: build
+    only:
+        - master
+    before_script:
+        - git submodule sync --recursive
+        - git submodule update --init --recursive
+    script:
+        - hugo --minify --enableGitInfo
+    artifacts:
+        paths:
+            - public/
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    dependencies:
+        - build
+    before_script:
+        - mkdir -p ~/.ssh 
+        - cat "$SSH_ID_RSA" > ~/.ssh/id_rsa
+        - chmod 700 ~/.ssh/id_rsa
+        - eval $(ssh-agent -s)
+        # Load protected key without prompt
+        #- echo "echo $SSH_PRIVATE_KEY" > ~/.ssh/mypass
+        #- cat ~/.ssh/mypass
+        #- chmod 700 ~/.ssh/mypass
+        #- cat ~/.ssh/id_rsa | SSH_ASKPASS=~/.ssh/mypass ssh-add -v -
+        - ssh-add ~/.ssh/id_rsa
+        # Verify loaded certificate
+        #- ssh-add -l
+        - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    script:
+        - cd public && scp -r *  deploy@jv.umsa.bo:deploy/
+
+build-dev:
+    stage: build-dev
+    only:
+        - dev
+    before_script:
+        - git submodule sync --recursive
+        - git submodule update --init --recursive
+    script:
+        - sed -i 's/blog.nucleognulinux.org/betablog.nucleognulinux.org/g' config.toml
+        - hugo --minify --enableGitInfo
+    artifacts:
+        paths:
+            - public/
+
+deploy-dev:
+    stage: deploy-dev
+    only:
+        - dev
+    dependencies:
+        - build
+    before_script:
+        - mkdir -p ~/.ssh 
+        - cat "$SSH_ID_RSA" > ~/.ssh/id_rsa
+        - chmod 700 ~/.ssh/id_rsa
+        - eval $(ssh-agent -s)
+        - ssh-add ~/.ssh/id_rsa
+        - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    script:
+        - cd public && scp -r *  deploy@jv.umsa.bo:beta-deploy/
