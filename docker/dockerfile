@@ -1,0 +1,9 @@
+FROM registry.gitlab.com/pages/hugo/hugo_extended:0.58.3
+
+LABEL maintainer="starsaminf@gmail.com"
+ARG BUILD_DATE
+
+LABEL org.label-schema.build-date=$BUILD_DATE
+
+RUN  apk update && apk add --no-cache git && apk add --no-cache openssh 
+RUN  mkdir -p ~/.ssh
