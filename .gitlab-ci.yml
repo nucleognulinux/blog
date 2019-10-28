@@ -1,4 +1,4 @@
-image: registry.gitlab.com/starsaminf/blog-nucleo
+image: registry.gitlab.com/nucleognulinux/blog
 stages:
     - build
     - deploy
