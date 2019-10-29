@@ -128,13 +128,7 @@ strong {
 .post-figure {
     margin: 1.5em 0;
 }
-.dropcase > p:first-of-type::first-letter {
-    float: left;
-    font-size: 3em;
-    line-height: 1;
-    margin: 0.05em 0.15em -0.1em 0;
-    /* initial-letter: 2; Maybe someday*/
-}
+
 .content {
     background-color: white;
     padding: 2em 0;

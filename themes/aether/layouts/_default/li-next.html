@@ -2,7 +2,7 @@
   href="{{ .Permalink }}" class="card blog-card" rel="bookmark" >
   {{ with .Resources.GetMatch "featuredImage" }}
   <div class="card-img-container">
-    <p class="card-img-overlay">Next Article</p>
+    <p class="card-img-overlay">Siguiente</p>
     <picture>
       {{ with $.Resources.GetMatch (replace (.Title) (path.Ext (.Title)) ".webp") -}}
       <source srcset="{{ .Permalink }}" type="image/webp">
