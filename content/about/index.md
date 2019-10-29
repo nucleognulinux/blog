@@ -6,10 +6,6 @@ displayInList = false
 dropCap = false
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
-
-It makes use of a variety of open source projects including:
-
 * https://facebook.com/nucleognulinux
 * https://t.me/nucleognulinux
 * https://instagram.com/nucleognulinux
