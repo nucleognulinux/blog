@@ -5,7 +5,7 @@ canonifyurls = true
 paginate = 3
 theme = "aether"
 googleAnalytics = "Your google analytics tracking ID - optional"
-disqusShortname = "Your shortname for Disqus - optional"
+disqusShortname = "blog-nucleognulinux-org"
 
 [params]
 brand = "Nucleo Gnu/Linux"
