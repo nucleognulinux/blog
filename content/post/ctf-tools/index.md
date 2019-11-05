@@ -53,7 +53,7 @@ yay -S hexedit
 
 ## Esteganografia
 
-Binwalk.- Herramienta para extrare arhivos ocultos dentro d imagenes
+Binwalk.- Herramienta para extraer archivos ocultos dentro de imagenes
 
 Sacar los headers de una imagen
 perl-image-exiftool 
