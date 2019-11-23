@@ -29,14 +29,7 @@ deploy:
         - cat "$SSH_ID_RSA" > ~/.ssh/id_rsa
         - chmod 700 ~/.ssh/id_rsa
         - eval $(ssh-agent -s)
-        # Load protected key without prompt
-        #- echo "echo $SSH_PRIVATE_KEY" > ~/.ssh/mypass
-        #- cat ~/.ssh/mypass
-        #- chmod 700 ~/.ssh/mypass
-        #- cat ~/.ssh/id_rsa | SSH_ASKPASS=~/.ssh/mypass ssh-add -v -
         - ssh-add ~/.ssh/id_rsa
-        # Verify loaded certificate
-        #- ssh-add -l
         - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     script:
         - cd public && scp -r *  deploy@jv.umsa.bo:deploy/
@@ -69,4 +62,4 @@ deploy-dev:
         - ssh-add ~/.ssh/id_rsa
         - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     script:
-        - cd public && scp -r *  deploy@jv.umsa.bo:beta-deploy/
+        - cd public && scp -r *  deploy@46.101.255.62:beta-deploy/

@@ -1,6 +1,6 @@
 ---
 title: "Crear un VPS en DigitalOcean ?"
-date: 2019-11-17T23:06:24-04:00
+date: 2019-11-18T22:27:24-04:00
 description: "DigitalOcean es también conocido como una infraestructura como servicio. "
 categories: ["Hosting Provider"]
 dropCap: true
@@ -63,4 +63,8 @@ En esta parte seleccionamos el método para ingresar a nuestro VPS, ya sea por *
 Con estos sencillos pasos ya tenemos nuestro VPS.
 ![Lista de Sistemas Operativos](./9.png)
 
+Para conectarte al VPS 
+```=sh
+ssh root@IP
+```
 Happy Coding :)
