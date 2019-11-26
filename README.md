@@ -19,10 +19,10 @@ En el git hay dos ramas la  dev y master (en lo posible no hay que tocar).
 2. Si todo sale bien se "compilara"
 3. Si la compilacion salio bien los archivos se enviaran al servidor
 
-Los cambios se podran ver en esta parte *betablog.nucleognulinux.org*
+Los cambios se podran ver en esta parte [betablog.nucleognulinux.org](betablog.nucleognulinux.org)
 
 
-Cada ves que se haga un git commit dentro la rama master, todo sera lo mismo, solo que los cambios se veran en blog.nucleognulinux.org
+Cada ves que se haga un git commit dentro la rama master, todo sera lo mismo, solo que los cambios se veran en [blog.nucleognulinux.org](blog.nucleognulinux.org)
 
 La rama master es la de produccion, esta la vera todo el mundo, asi hay que tener cuidado con lo que publicamos
 La otra rama dev, es para hacer pruebas y demas, en teoria la veremos solo nosotros y podremos corregir y demas.
@@ -32,6 +32,8 @@ Quiero contribuir, que necesito ?
 1. Instalar git
 2. Instalar go
 3. Instalar hugo
+   - No usar ```apt install hugo``` porque el Hugo de los paquetes de Linux está roto, como se explica en este [issue](https://github.com/gcushen/hugo-academic/issues/703s).
+   - Por favor instale Hugo de las releases oficiales de la distribución de Hugo en la página de Github.
 4. CLonar el repo git clone git@gitlab.com:starsaminf/blog-nucleo.git
 
 ```shell=
