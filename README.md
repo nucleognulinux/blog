@@ -32,7 +32,7 @@ Quiero contribuir, que necesito ?
 1. Instalar git
 2. Instalar go
 3. Instalar hugo
-   - No usar ```apt install hugo``` porque el Hugo de los paquetes de Linux está roto, como se explica en este [issue](https://github.com/gcushen/hugo-academic/issues/703s).
+   - No usar ```apt install hugo``` porque el Hugo de los paquetes de Linux está roto, como se explica en este [issue](https://github.com/gcushen/hugo-academic/issues/703).
    - Por favor instale Hugo de las releases oficiales de la distribución de Hugo en la página de Github.
 4. CLonar el repo git clone git@gitlab.com:starsaminf/blog-nucleo.git
 
