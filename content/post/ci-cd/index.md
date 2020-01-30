@@ -26,7 +26,7 @@ La integración continua es una práctica de desarrollo de software en la que lo
 
 
 # Objetivo
-AL finalizar esta guia podras tener tus propio gitlab configurado para que cada vez que se haga un commit de codigo nuevo en la rama *dev* se ejecuten pruebas automaticas.
+AL finalizar esta guia podras tener tus propio repositorio gitlab configurado para que cada vez que se haga un commit se ejecuten pruebas automaticas.
 
 Revisa estos links si tienes dudas:
 [Curso Udemy DevOps - Las Artes Marciales del Software ](https://www.udemy.com/course/devops-las-artes-marciales-del-software/)
