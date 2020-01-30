@@ -62,4 +62,4 @@ deploy-dev:
         - ssh-add ~/.ssh/id_rsa
         - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     script:
-        - cd public && scp -r *  deploy@46.101.255.62:beta-deploy/
+        - cd public && scp -r *  deploy@jv.umsa.bo:beta-deploy/
