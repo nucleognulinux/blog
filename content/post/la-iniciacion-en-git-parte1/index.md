@@ -31,39 +31,39 @@ El objetivo es que puedas empezar a usar esta poderosa herramienta que es Github
 # Comenzamos...
 + Crea tu cuenta en github.com
 
-![Cuenta de github](/home/melany/Desktop/git blog nucleognulinux/cuentagithub.png)
+![Cuenta de github](./git blog nucleognulinux/cuentagithub.png)
 
 + Una vez creada tu cuenta, crea un nuevo repositorio, como? Haz click en Iniciar un Proyecto. 
 
-![Creando nuevo repositorio](/home/melany/Desktop/git blog nucleognulinux/crearepositorio.png)
+![Creando nuevo repositorio](./git blog nucleognulinux/crearepositorio.png)
 
 + Veras que hay varias opciones, pero mira y haz click a la opcion clonar o descargar, y copia el link que te genero.
 
-![Iniciando la clonacion](/home/melany/Desktop/git blog nucleognulinux/linkclonacion.png)
+![Iniciando la clonacion](./git blog nucleognulinux/linkclonacion.png)
 
 + Ahora abre tu terminal de Linux, y escribe git clone INSERTA EL LINK DE TU REPOSITORIO AQUI, luego ENTER.
 
-![Clonando desde la terminal Linux](/home/melany/Desktop/git blog nucleognulinux/clonando.png)
+![Clonando desde la terminal Linux](./git blog nucleognulinux/clonando.png)
 
 + Luego de ello debemos ingresar a la carpeta clonada, en la misma terminal escribe ls, ENTER, luego ingresa a la carpeta escribiendo cd NOMBRE DE LA CARPETA CLONADA, ENTER.
 
-![Ingresando a la carpeta clonada](/home/melany/Desktop/git blog nucleognulinux/ingresandoalacarpeta.png)
+![Ingresando a la carpeta clonada](./git blog nucleognulinux/ingresandoalacarpeta.png)
 
 + Continuando, debemos crear un archivo, en este caso crearemos un archivo.py, escribe en la terminal touch nombredetuarchivo.py, ENTER
 
-![Creando archivo.py](/home/melany/Desktop/git blog nucleognulinux/creandotouch.png)
+![Creando archivo.py](./git blog nucleognulinux/creandotouch.png)
 
 + Abre este archivo con cualquiera de estos editores de texto:  vim, nano, vscode, sublimetext, gedit, etc; escribe vim nombredetuarchivo.py, luego ENTER; te daras cuenta que ingresaste a un editor, ahora esc i, e insertamos nuestro primer hola mundo en python, escribe print("Tu mensaje"), para guardar ello escribe :wq, ENTER.
 
-![Abriendo el archivo desde un editor de texto](/home/melany/Desktop/git blog nucleognulinux/ingresandoholamundo.png)
+![Abriendo el archivo desde un editor de texto](./git blog nucleognulinux/ingresandoholamundo.png)
 
 + Te daras cuenta que volviste a la terminal, ahora escribe python3 nombredetuarchivo.py, y veras que despliega el mensaje que programaste.
 
-![Desplegando mensaje en la terminal](/home/melany/Desktop/git blog nucleognulinux/desplegandomensaje.png)
+![Desplegando mensaje en la terminal](./git blog nucleognulinux/desplegandomensaje.png)
 
 + Ya estamos a pocos pasos, escribe git commit -m "primer commit" y luego ENTER. Luego escribe git push origin master, ENTER, entonces te pedira tu usuario y password. Luego ENTER.
 
-![Commit y push](/home/melany/Desktop/git blog nucleognulinux/originmaster.png)
+![Commit y push](./git blog nucleognulinux/originmaster.png)
 
 + Listo! Ya lo hicimos, ahora ve nuevamente tu cuenta y mira la magia que hiciste. Espero te hayan servido los pasos. Ahora continua haciendo mas scripts, proyectos, paginas web, etc. Eres genial! 
 
