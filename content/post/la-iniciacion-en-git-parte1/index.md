@@ -1,6 +1,6 @@
 ---
 title: "Iniciacion en Git Parte 1.0"
-date: 2020-01-29T00:32:00-00:00
+date: 2020-02-09T00:32:00-00:00
 description: "Inciando en el mundo de Git y Github, con un toque de Python "
 categories: ["Git y Github"]
 dropCap: true
