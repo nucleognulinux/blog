@@ -31,27 +31,27 @@ El objetivo es que puedas empezar a usar esta poderosa herramienta que es Github
 # Comenzamos...
 + Crea tu cuenta en github.com
 
-![Cuenta de github](./cuentagithub.png/)
+![Cuenta de github](./cuentagithub.png)
 
 + Una vez creada tu cuenta, crea un nuevo repositorio, como? Haz click en Iniciar un Proyecto. 
 
-![Creando nuevo repositorio](./crearepositorio.png/)
+![Creando nuevo repositorio](./crearepositorio.png)
 
 + Veras que hay varias opciones, pero mira y haz click a la opcion clonar o descargar, y copia el link que te genero.
 
-![Iniciando la clonacion](./linkclonacion.png/)
+![Iniciando la clonacion](./linkclonacion.png)
 
 + Ahora abre tu terminal de Linux, y escribe git clone INSERTA EL LINK DE TU REPOSITORIO AQUI, luego ENTER.
 
-![Clonando desde la terminal Linux](./clonando.png/)
+![Clonando desde la terminal Linux](./clonando.png)
 
 + Luego de ello debemos ingresar a la carpeta clonada, en la misma terminal escribe ls, ENTER, luego ingresa a la carpeta escribiendo cd NOMBRE DE LA CARPETA CLONADA, ENTER.
 
-![Ingresando a la carpeta clonada](./ingresandoalacarpeta.png/)
+![Ingresando a la carpeta clonada](./ingresandoalacarpeta.png)
 
 + Continuando, debemos crear un archivo, en este caso crearemos un archivo.py, escribe en la terminal touch nombredetuarchivo.py, ENTER
 
-![Creando archivo.py](./creandotouch.png/)
+![Creando archivo.py](./creandotouch.png)
 
 + Abre este archivo con cualquiera de estos editores de texto:  vim, nano, vscode, sublimetext, gedit, etc; escribe vim nombredetuarchivo.py, luego ENTER; te daras cuenta que ingresaste a un editor, ahora esc i, e insertamos nuestro primer hola mundo en python, escribe print("Tu mensaje"), para guardar ello escribe :wq, ENTER.
 
