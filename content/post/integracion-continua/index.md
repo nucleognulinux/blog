@@ -12,7 +12,7 @@ resources:
   src: "ci-cd-flow.png"
 ---
 
-# ¿Qué es DevOps?
+# ¿Qué es DevOps?.
 
 "DevOps es la union de personas, procesos y productos para lograr la entrega de valor continuo para los usuarios finales" Donovan Brown - Principal DevOps Manager Microsoft
 
