@@ -1,6 +1,6 @@
 baseurl = "https://blog.nucleognulinux.org"
-title = "Nucleo Gnu/Linux"
-author = "Nucleo Gnu/Linux"
+title = "Núcleo GNU/Linux"
+author = "Núcleo GNU/Linux"
 canonifyurls = true
 paginate = 3
 theme = "aether"
@@ -8,7 +8,7 @@ googleAnalytics = "Your google analytics tracking ID - optional"
 disqusShortname = "blognucleognulinux"
 
 [params]
-brand = "Nucleo Gnu/Linux"
+brand = "Núcleo GNU/Linux"
 description = "aether Hugo theme for blogs"
 bgimg = "img/ignasi_pattern_s.png"
 homeimg = "URL to the image used for the home button at the bottom of each post - optional"
