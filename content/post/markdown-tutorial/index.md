@@ -14,9 +14,12 @@ resources:
     description: ""
 ---
 
-# h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
+## Cabeceras
+tenemos distintos niveles de titulos o cabeceras para nuestro post, muy similar al HTML se tiene hasta 6 niveles ahrre.
+
+# \# Titulo  h1
+## \## Titulo  h2
+### \### Titulo  h3
+#### \#### Titulo  h4
+##### \##### Titulo  h5
+###### \###### Titulo  h6
