@@ -1,7 +1,7 @@
 ---
-title: "Guia Markdown"
+title: "Guía Markdown"
 date: 2020-08-09T21:03:58-04:00
-description: "Esta es una guia breve de Markdown"
+description: "Esta es una guía breve de Markdown"
 categories: ["markdown", "guia"]
 dropCap: true
 displayInMenu: false
@@ -14,7 +14,11 @@ resources:
     description: ""
 ---
 
+"Si no documentas tu codig, no eres choquito"
+
 # Cabeceras
+Al igual que en HTML el markdown nos permite tener 6 niveles de cabeceras equivalentes a los h1 hasta el h6.
+
 Lista de cabeceras
 
 ------
@@ -29,7 +33,7 @@ Lista de cabeceras
 # texto
 **negrilla**
 _cursiva_
-
+~~tachado~~
 # tablas
 | nro | nombre |
 | ---: | ----: |
@@ -40,10 +44,10 @@ _cursiva_
 # enlaces
 **[mi pagina](http://google.com/)**
 
-# imagenes
+# Imágenes
 ![mi imagen](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
-# codigo
+# código
 
 ```shell
 echo "HOLA MUNDO"
@@ -55,5 +59,7 @@ const request = () => {
 }
 
 ```
-
-
+Ejemplo en Python:
+```python
+print("hola mundo")
+```
